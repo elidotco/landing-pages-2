@@ -7,7 +7,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { CiCircleAlert } from "react-icons/ci";
 import { FaArrowRightToBracket } from "react-icons/fa6";
-const rubik = Rubik({
+export const rubik = Rubik({
   subsets: ["latin"],
 });
 
@@ -23,7 +23,7 @@ const Header = () => {
     <header className="w-full  flex justify-between lg:justify-normal items-center py-5 px-10 md:px-15 lg:px-20 lg:border-b lg:border-primary-lighten">
       {/* Logo */}
       <div
-        className={`font-extrabold text-4xl text-primary uppercase logo ${rubik.className} `}
+        className={`font-extrabold flex-1 xl:flex-[0] text-4xl text-primary uppercase logo ${rubik.className} `}
       >
         CooK
       </div>
@@ -31,7 +31,7 @@ const Header = () => {
       {/* Logo */}
       {/* Menuburger */}
       <div
-        className="w-10 h-10 flex sm:hidden rounded-lg justify-center items-center bg-primary"
+        className="w-10 h-10 flex xl:hidden rounded-lg justify-center items-center bg-primary"
         onClick={openMenu}
       >
         <Bars3Icon className="w-6 h-6 text-white" />
@@ -39,8 +39,8 @@ const Header = () => {
       {/* Menuburger */}
 
       {/* Menu */}
-      <div className="lg:flex hidden flex-1 justify-between items-center text-black">
-        <ul className="flex items-center  ml-10 pl-6 border-primary-lighten border-l-2 gap-x-5 text-lg capitalize ">
+      <div className=" flex xl:flex-1 justify-end  xl:justify-between items-center text-black">
+        <ul className=" xl:flex hidden items-center  ml-10 pl-6 border-primary-lighten border-l-2 gap-x-5 text-lg capitalize ">
           <li>
             <a className="flex items-center" href="#">
               {" "}
@@ -73,7 +73,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <div className="flex items-center">
+        <div className="lg:flex hidden lg:pl-4 xl:pl-0 items-center">
           <ul className="flex uppercase border-r border-primary-lighten pr-3 gap-3">
             <li>Eng</li>
             <li>USD</li>
@@ -82,7 +82,7 @@ const Header = () => {
             <CiCircleAlert size={24} className="text-primary mx-2" />
           </div>
           {/* Login Button */}
-          <button className=" ml-5 flex w-32 justify-center items-center bg-primary text-white h-12 text-lg">
+          <button className=" ml-5 flex rounded-md w-32 justify-center items-center bg-primary text-white h-12 text-lg">
             Log In <FaArrowRightToBracket size={20} className="pl-1" />
           </button>
           {/* Login Button */}
