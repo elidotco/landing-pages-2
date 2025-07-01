@@ -20,7 +20,7 @@ const Header = () => {
     isOPen ? setIsOPen(!isOPen) : setIsOPen(true);
   };
   return (
-    <header className="w-full  flex justify-between lg:justify-normal items-center py-5 px-10 md:px-15 lg:px-20 lg:border-b lg:border-primary-lighten">
+    <header className="w-full  flex justify-between lg:justify-normal items-center py-5 px-10 md:px-15 lg:px-20 lg:border-b xl:border-primary-lighten">
       {/* Logo */}
       <div
         className={`font-extrabold flex-1 xl:flex-[0] text-4xl text-primary uppercase logo ${rubik.className} `}
