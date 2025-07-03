@@ -9,10 +9,10 @@ const pacifico = Pacifico({
 });
 const HeroSection = () => {
   return (
-    <div className="text-black flex pt-20 gap-56 xl:gap-0 xl:px-15  w-full  flex-col-reverse xl:flex-row xl:justify-between ">
-      <div className="xl:w-[45%] flex flex-col gap-5  px-5 md:px-10 lg:px-15 xl:px-0">
+    <div className="text-black flex pt-20 gap-56 xl:gap-0 xl:px-20 3xl:px-32  w-full  flex-col-reverse xl:flex-row xl:justify-between ">
+      <div className="xl:w-[45%] flex flex-col gap-5 3xl:gap-8 px-5 md:px-10 lg:px-15 xl:px-0">
         <h1
-          className={`text-4xl xl:text-left text-center md:text-5xl font-bold `}
+          className={`text-4xl xl:text-left text-center 3xl:text-7xl md:text-5xl font-bold `}
         >
           Master the Art of Cooking with{" "}
           <span className={`${pacifico.className} text-primary`}>Experts</span>{" "}
@@ -28,11 +28,11 @@ const HeroSection = () => {
           <img src="/play-circle.svg" alt="" /> Learn more in the COOK video
         </div>
         <div className="flex gap-3">
-          <button className="  flex rounded-md w-fit justify-center items-center bg-primary px-3 text-white h-12 ">
+          <button className="  flex rounded-md w-fit justify-center items-center bg-primary capitalize px-3 text-white h-12 ">
             Find your tutor
           </button>
           <button className=" ml-5 flex rounded-md w-fit justify-center items-center border-primary px-3 text-primary border-2 h-12 ">
-            Find your tutor
+            Join Our Chefs
           </button>
         </div>
       </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
           width={800}
           height={500}
           alt="Hero image"
-          className="md:w-4/5 xl:w-full w-full md:rounded-4xl"
+          className="md:w-4/5 xl:w-full  w-full md:rounded-4xl"
         />
         <ReviewCard />
       </div>
