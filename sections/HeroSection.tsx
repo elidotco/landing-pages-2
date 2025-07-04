@@ -40,7 +40,7 @@ const HeroSection = () => {
       {/* Image part of the hero section */}
       <div className="flex items-center relative xl:w-2/5  flex-col justify-center w-full">
         <Image
-          src="/Hero img.png"
+          src="/HeroImg.png"
           width={800}
           height={500}
           alt="Hero image"
