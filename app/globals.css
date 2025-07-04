@@ -5,8 +5,13 @@
   --color-primary-lighten: #ffdbb8;
   --color-secondary-background: #fffdf4;
   /* ... */
+  --breakpoint-3xl: 120rem;
 }
 
 body {
   color: white;
+}
+
+button {
+  cursor: pointer;
 }
